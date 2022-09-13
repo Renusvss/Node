@@ -1,0 +1,34 @@
+.main-parent{
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.Parent-element{
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.Parent-element1{
+    background-color:blue;
+    height:100%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Parent-element2{
+    background-color: green;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}

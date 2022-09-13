@@ -1,0 +1,19 @@
+.google-image:hover{
+    margin-left:60px;
+    margin-top:80px;
+}
+.element:nth-child(even){
+    color: purple;
+
+}
+.element:nth-child(odd){
+    color:green;
+}
+.element:nth-child(even):hover{
+background-color:black;
+
+}
+.element:nth-child(odd):hover{
+    background-color: aqua;
+
+}

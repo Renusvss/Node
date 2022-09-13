@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+        .Container{
+            height:500px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: cadetblue;
+            background-image:linear-gradient(150deg,rgb(34, 34, 94),rgb(214, 214, 16),rgb(247, 170, 76));
+            padding-left: 50px;
+            padding-right: 50px;
+
+        }
+        .Container1{
+            height:400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .Container2{
+            height:400px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            overflow:hidden;
+        }
+
+        .header {
+        font-size: 40px;
+        font-weight: 900;
+        box-shadow: 1px 5px 40px 5px rgb(12, 14, 13);
+      }
+        .Container3{
+           height:400px;
+           width:100%;
+           display:flex;
+           flex-direction:Column;
+           justify-content:center;
+           align-items:center;
+        }
+        .image {
+        width: 180px;
+        height: 280px;
+        -webkit-box-reflect:below 1px linear-gradient(to bottom, rgba(223, 20, 88, 0), rgba(214, 27, 27, 0.3));
+          
+      }
+
+
+        @media screen and (max-width:500px){
+
+             .Container {
+             flex-direction: column;
+             height:auto;
+            }
+            .image {
+          width: 50px;
+          height: 80px;
+          margin-bottom: 20px;
+        }
+        }
+        .image:hover {
+         transform: rotate(200deg);
+        /* transform: scale(1.1, 1.1); */
+      }
+
+             </style>
+
+    </head>
+    <body>
+        <div class ="Container">
+            <div class="Container1">
+            <h2 class="header" >Mean Full Stack</h2>
+            <p>
+                MEAN is a free and open-source JavaScript
+                software stack for building 
+                dynamic web sites and web applications.
+            </p>
+            </div>
+            <div class="Container2" >
+
+            <img class="image" src ="https://www.nmttechnologies.com/images/mean-stack-development.png" />
+        </div>
+        <div class="Container3">
+            <br/>
+                <p>Mongo Db</p>
+            <p>Express Js</p>
+            <p>Angular Js</p>
+            <p>Node Js</p>
+
+        </div>
+    </div>
+
+    </body>
+</html>

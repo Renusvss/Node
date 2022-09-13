@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <style>
+      <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     
+     .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .table-head {
+        background-color: antiquewhite;
+        color: rgb(69, 42, 165);
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+      tr:hover {
+        background-color: #b66a6a;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <p>HTML TABLE</p>
+
+        <table>
+          <tr>
+            <th class="table-head" >Name</th>
+            <th class="table-head" style="width: 200px">Email Address</th>
+            <th class="table-head">Mobile</th>
+          </tr>
+
+          <tr>
+            <td>Node </td>
+            <td>JS </td>
+            <td>node</td>
+            <td>121319</td>
+          </tr>
+
+          <tr>
+            <td>React </td>
+            <td>reac</td>
+            <td>907</td>
+          </tr>
+
+          <tr>
+            <td>React</td>
+            <td>Native JS</td>
+            <td>node@g.com</td>
+            <td >9079070</td>
+          </tr>
+
+          <tr>
+            <td>Express</td>
+            <td>JS</td>
+            <td>react@g.com</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
