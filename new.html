@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="dark-container">
+        <img class="image-1" src="images/img1.png" />
+      </div>
+      <div class="light-container">
+        <img class="image-2" src="images/img2.png" />
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="login-card">
+        <!--Row - 1-->
+        <div class="row-1">
+          <div>
+            <p class="row-1-text-1">Welcome to Proclink!</p>
+          </div>
+          <div>
+            <p class="row-1-text-2">
+              Have an Account ?<br />
+            </p>
+            <p><a href="logindesign.html">login</a></p>
+          </div>
+        </div>
+        <!--Row - 2-->
+        <p class="row-2">Register Here</p>
+        <!--Row - 3-->
+
+        <div class="input-row">
+          <label class="input-row-label"
+            >Enter your username</label
+          ><br />
+          <input id="username_id"
+            placeholder="username"
+            class="input-row-input"
+          />
+        </div>
+        <!---username and contact number-->
+        <div class="input-row">
+          <div class="row">
+          <div label class="col">
+            Enter Email Address</label>
+            <input id="email_id"
+            placeholder="Email Address"
+            class ="input-row-input"/>
+            </div>
+          <div label class="cols">
+              Full name</label>
+              <input id="name_id"
+              placeholder="Full Name"
+              class="input-row-input"/>
+            </div>
+            </div>
+        </div>
+
+
+        <!--Row - 4-->
+
+        <div class="input-row">
+          <label class="input-row-label">Enter your Password</label><br />
+          <input id="pass_id"
+            type="password"
+            placeholder="Enter your Password"
+            class="input-row-input"
+          />
+          <img src="./images/crosseye.svg"id ="eye_id" onClick="showHidePassword()" class="pass-eye" ></img>
+
+        </div>
+
+        <!--Row - 5-->
+        <button onclick="onRegisterClick()" class="login-button">Register</button>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script >
+      const showHidePassword=()=>
+      {
+        const passElement = document.getElementById("pass_id");
+        const imgElement = document.getElementById("eye_id");
+        if(passElement.type==="text"){
+          passElement.type="password";
+          imgElement.src="./images/crosseye.svg"
+        }else{
+          passElement.type="text";
+          imgElement.src="./images/eye.png"
+        }
+      }
+      const onRegisterClick = () => {
+        const passElement=document.getElementById("pass_id");
+        const emailElement=document.getElementById("email_id");
+        const usernameElement =document.getElementById("username_id")
+        const nameElement =document.getElementById("name_id")
+        var obj = {
+          username:usernameElement.value,
+          password:passElement.value,
+          email:emailElement.value,
+          name:nameElement.value
+        }
+
+     console.log("Register Data",obj)
+      }
+    </script>
+
+  </body>
+</html>
